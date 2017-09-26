@@ -20,5 +20,15 @@ public class FractionTest {
     public void testMenor() {
         assert(f.menor(f1));
     }
+    
+    @Test
+    public void testMultiplicar() {
+    	Fraction aux = new Fraction(5,7);
+    	this.f.multiplicar(aux);
+    	
+    	assertEquals(this.f.getNumerator(),5);
+    	assertEquals(this.f.getDenominator(),14);
+    	
+    }
 	
 }

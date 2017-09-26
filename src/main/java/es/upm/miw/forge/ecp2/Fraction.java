@@ -64,4 +64,11 @@ public class Fraction {
     	return this.decimal() < f.decimal();
     }
     
+    public void multiplicar(Fraction f) {
+    	this.numerator = this.numerator * f.numerator;
+    	this.denominator = this.denominator * f.denominator;
+    }
+    
+    
+    
 }
