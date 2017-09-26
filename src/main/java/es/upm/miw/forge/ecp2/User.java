@@ -25,6 +25,10 @@ public class User {
     public String getName() {
         return this.name;
     }
+    
+    public String getNameUpperCase() {
+        return this.name.toUpperCase();
+    }
 
     public String getFamilyName() {
         return this.familyName;
