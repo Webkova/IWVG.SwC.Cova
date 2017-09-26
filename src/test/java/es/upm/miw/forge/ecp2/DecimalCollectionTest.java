@@ -54,5 +54,12 @@ public class DecimalCollectionTest {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().higher();
 	}
+	
+	@Test
+	public void testMenor() {
+		double menor = this.decimalCollection.menor();
+		
+		assertEquals(menor, -1, 10e-5);
+	}
 
 }
