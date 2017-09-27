@@ -23,7 +23,7 @@ public class FractionTest {
     
     @Test
     public void testMayor() {
-        assert(!f.mayor(f1));
+        assert(f.mayor(f1));
     }
     
     @Test
