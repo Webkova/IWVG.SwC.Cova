@@ -22,6 +22,11 @@ public class FractionTest {
     }
     
     @Test
+    public void testMayor() {
+        assert(!f.mayor(f1));
+    }
+    
+    @Test
     public void testMultiplicar() {
     	Fraction aux = new Fraction(5,7);
     	this.f.multiplicar(aux);
