@@ -49,5 +49,11 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
+    
+    @Test
+    public void testThirdCoordinate() {
+        point = new Point(2, 3, 3);
+        assertEquals("Point[2,3,3]", point.toString());
+    }
 
 }
