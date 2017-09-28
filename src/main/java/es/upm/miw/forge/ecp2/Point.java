@@ -44,8 +44,8 @@ public class Point {
     }
     
     public addValueToCoordinates(int value) {
-        this.x = x + value;
-        this.y = y + value;
+        this.x = this.x + value;
+        this.y = this.y + value;
     }
     
 }
