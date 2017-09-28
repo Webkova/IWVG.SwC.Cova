@@ -23,7 +23,7 @@ public class Point {
     public int getY() {
         return this.y;
     }
-
+    
     public double module() {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
@@ -40,6 +40,11 @@ public class Point {
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
+    }
+    
+    public void addValueToCoordinates(int value) {
+        this.x = this.getX() + value;
+        this.y = this.getY() + value;
     }
     
 }
