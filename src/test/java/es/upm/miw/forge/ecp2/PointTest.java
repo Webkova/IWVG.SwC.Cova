@@ -52,7 +52,7 @@ public class PointTest {
     
     @Test
     public void testAddValueToCoordinates() {
-        pt.addValueToCoordinates(1);
+        this.pt.addValueToCoordinates(1);
         assertEquals(3, pt.getX());
         assertEquals(4, pt.getY());
     }

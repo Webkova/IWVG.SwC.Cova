@@ -25,7 +25,7 @@ public class Point {
     }
     
     public double module() {
-        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+        return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
     public double phase() {
@@ -35,17 +35,16 @@ public class Point {
     public void translateOrigin(Point origin) {
         this.x -= origin.getX();
         this.y -= origin.getY();
-        this.z -= origin.getZ();
     }
 
     @Override
     public String toString() {
-        return "Point[" + x + "," + y + "," + "]";
+        return "Point[" + x + "," + y + "]";
     }
     
     public void addValueToCoordinates(int value) {
-        this.x = this.x + value;
-        this.y = this.y + value;
+        this.x = this.getX() + value;
+        this.y = this.getY() + value;
     }
     
 }
