@@ -43,7 +43,7 @@ public class Point {
         return "Point[" + x + "," + y + "," + "]";
     }
     
-    public addValueToCoordinates(int value) {
+    public void addValueToCoordinates(int value) {
         this.x = this.x + value;
         this.y = this.y + value;
     }
