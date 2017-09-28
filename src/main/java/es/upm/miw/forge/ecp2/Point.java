@@ -1,12 +1,11 @@
 package es.upm.miw.forge.ecp2;
 
 public class Point {
-    private int x, y, z;
+    private int x, y;
 
-    public Point(int x, int y, int z) {
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
-        this.z = z;
     }
 
     public Point(int xy) {
@@ -14,7 +13,7 @@ public class Point {
     }
 
     public Point() {
-        this(0, 0, 0);
+        this(0, 0);
     }
 
     public int getX() {
@@ -25,10 +24,6 @@ public class Point {
         return this.y;
     }
     
-    public int getZ() {
-        return this.z;
-    }
-
     public double module() {
         return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
     }
@@ -45,7 +40,12 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point[" + x + "," + y + "," + z + "]";
+        return "Point[" + x + "," + y + "," + "]";
+    }
+    
+    public addValueToCoordinates(int value) {
+        this.x = x + value;
+        this.y = y + value;
     }
     
 }

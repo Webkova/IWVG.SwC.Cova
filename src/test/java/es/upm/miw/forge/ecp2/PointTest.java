@@ -51,9 +51,10 @@ public class PointTest {
     }
     
     @Test
-    public void testThirdCoordinate() {
-        point = new Point(2, 3, 3);
-        assertEquals("Point[2,3,3]", point.toString());
+    public void testAddValueToCoordinates() {
+        pt.addValueToCoordinates(1);
+        assertEquals(3, pt.getX());
+        assertEquals(4, pt.getY());
     }
 
 }
